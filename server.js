@@ -114,7 +114,7 @@ app.put('/image',(req,res)=>{
 // bcrypt.compare("veggies", hash, function(err, res) {
 //     // res = false
 // });
-app.listen(3000,()=>{
-    console.log('App is running on port 3000')
+app.listen(process.env.PORT || 3000,()=>{
+    console.log(`App is running on port ${process.env.PORT}`)
 });
 
